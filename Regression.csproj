@@ -1,0 +1,538 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9549DE8D-8D23-4234-9597-7FDD895080E6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Regression</RootNamespace>
+    <AssemblyName>Regression</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accord, Version=3.7.2.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Accord.dll</HintPath>
+    </Reference>
+    <Reference Include="Accord.Controls, Version=3.7.2.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Accord.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Accord.IO, Version=3.7.2.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Accord.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="Accord.MachineLearning, Version=3.7.2.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Accord.MachineLearning.dll</HintPath>
+    </Reference>
+    <Reference Include="Accord.Math, Version=3.7.2.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Accord.Math.dll</HintPath>
+    </Reference>
+    <Reference Include="Accord.Math.Core, Version=3.7.2.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Accord.Math.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Accord.Neuro, Version=3.7.2.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Accord.Neuro.dll</HintPath>
+    </Reference>
+    <Reference Include="Accord.Statistics, Version=3.7.2.0, Culture=neutral, PublicKeyToken=fa1a88e29555ccf7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Accord.Statistics.dll</HintPath>
+    </Reference>
+    <Reference Include="AIMLbot, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AIMLbot.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\..\framework-master\framework-master\Externals\SharpZipLib\lib\11\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Beans">
+      <HintPath>..\..\..\..\..\..\YUVATECH 2017\PROJECT STUDY\DOTNET\DATA SCALING\Data Mining classifiation (tkm)\Enhacement(April)\svm with pca\svm\svm\bin\Debug\IKVM.OpenJDK.Beans.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Core">
+      <HintPath>..\..\..\..\..\..\YUVATECH 2017\PROJECT STUDY\DOTNET\DATA SCALING\Data Mining classifiation (tkm)\Enhacement(April)\svm with pca\svm\svm\bin\Debug\IKVM.OpenJDK.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Remoting">
+      <HintPath>..\..\..\..\..\..\YUVATECH 2017\PROJECT STUDY\DOTNET\DATA SCALING\Data Mining classifiation (tkm)\Enhacement(April)\svm with pca\svm\svm\bin\Debug\IKVM.OpenJDK.Remoting.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.SwingAWT">
+      <HintPath>..\..\..\..\..\..\YUVATECH 2017\PROJECT STUDY\DOTNET\DATA SCALING\Data Mining classifiation (tkm)\Enhacement(April)\svm with pca\svm\svm\bin\Debug\IKVM.OpenJDK.SwingAWT.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Text">
+      <HintPath>..\..\..\..\..\..\YUVATECH 2017\PROJECT STUDY\DOTNET\DATA SCALING\Data Mining classifiation (tkm)\Enhacement(April)\svm with pca\svm\svm\bin\Debug\IKVM.OpenJDK.Text.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Util">
+      <HintPath>..\..\..\..\..\..\YUVATECH 2017\PROJECT STUDY\DOTNET\DATA SCALING\Data Mining classifiation (tkm)\Enhacement(April)\svm with pca\svm\svm\bin\Debug\IKVM.OpenJDK.Util.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.API">
+      <HintPath>..\..\..\..\..\..\YUVATECH 2017\PROJECT STUDY\DOTNET\DATA SCALING\Data Mining classifiation (tkm)\Enhacement(April)\svm with pca\svm\svm\bin\Debug\IKVM.OpenJDK.XML.API.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.Bind">
+      <HintPath>..\..\..\..\..\..\YUVATECH 2017\PROJECT STUDY\DOTNET\DATA SCALING\Data Mining classifiation (tkm)\Enhacement(April)\svm with pca\svm\svm\bin\Debug\IKVM.OpenJDK.XML.Bind.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.Parse">
+      <HintPath>..\..\..\..\..\..\YUVATECH 2017\PROJECT STUDY\DOTNET\DATA SCALING\Data Mining classifiation (tkm)\Enhacement(April)\svm with pca\svm\svm\bin\Debug\IKVM.OpenJDK.XML.Parse.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.Transform">
+      <HintPath>..\..\..\..\..\..\YUVATECH 2017\PROJECT STUDY\DOTNET\DATA SCALING\Data Mining classifiation (tkm)\Enhacement(April)\svm with pca\svm\svm\bin\Debug\IKVM.OpenJDK.XML.Transform.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.WebServices">
+      <HintPath>..\..\..\..\..\..\YUVATECH 2017\PROJECT STUDY\DOTNET\DATA SCALING\Data Mining classifiation (tkm)\Enhacement(April)\svm with pca\svm\svm\bin\Debug\IKVM.OpenJDK.XML.WebServices.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.XPath">
+      <HintPath>..\..\..\..\..\..\YUVATECH 2017\PROJECT STUDY\DOTNET\DATA SCALING\Data Mining classifiation (tkm)\Enhacement(April)\svm with pca\svm\svm\bin\Debug\IKVM.OpenJDK.XML.XPath.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.Runtime">
+      <HintPath>..\..\..\..\..\..\YUVATECH 2017\PROJECT STUDY\DOTNET\DATA SCALING\Data Mining classifiation (tkm)\Enhacement(April)\svm with pca\svm\svm\bin\Debug\IKVM.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="LumenWorks.Framework.IO">
+      <HintPath>..\..\..\..\..\..\YUVATECH 2017\PROJECT STUDY\DOTNET\DATA SCALING\Data Mining classifiation (tkm)\Enhacement(April)\svm with pca\svm\svm\bin\Debug\LumenWorks.Framework.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>C:\Program Files (x86)\Microsoft Visual Studio 10.0\Visual Studio Tools for Office\PIA\Office12\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="weka">
+      <HintPath>..\..\..\..\..\..\YUVATECH 2017\PROJECT STUDY\DOTNET\DATA SCALING\Data Mining classifiation (tkm)\Enhacement(April)\svm with pca\svm\svm\bin\Debug\weka.dll</HintPath>
+    </Reference>
+    <Reference Include="ZedGraph">
+      <HintPath>..\..\package\ZedGraph.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox.designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccuracyGraph.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccuracyGraph.Designer.cs">
+      <DependentUpon>AccuracyGraph.cs</DependentUpon>
+    </Compile>
+    <Compile Include="aconfusionmatrix.cs" />
+    <Compile Include="Admin_Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Home.designer.cs">
+      <DependentUpon>Admin_Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="aimlwriter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aimlwriter.designer.cs">
+      <DependentUpon>aimlwriter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BagWords.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BagWords.Designer.cs">
+      <DependentUpon>BagWords.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseConnection.cs" />
+    <Compile Include="BaseConnection1.cs" />
+    <Compile Include="botcheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="botcheck.designer.cs">
+      <DependentUpon>botcheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="botcheck1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="botcheck1.Designer.cs">
+      <DependentUpon>botcheck1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BrowseFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BrowseFile.Designer.cs">
+      <DependentUpon>BrowseFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CSVUtlity.cs" />
+    <Compile Include="dA.cs" />
+    <Compile Include="DataPreprocessing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataPreprocessing.Designer.cs">
+      <DependentUpon>DataPreprocessing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dataprocess.cs" />
+    <Compile Include="DBN.cs" />
+    <Compile Include="DeepLearning1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeepLearning1.Designer.cs">
+      <DependentUpon>DeepLearning1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Emotion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Emotion.Designer.cs">
+      <DependentUpon>Emotion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmpiricalCummulativeDensityDistribution.cs" />
+    <Compile Include="ExcelReader.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWords.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWords.Designer.cs">
+      <DependentUpon>frmWords.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralizedLinearRegression.cs" />
+    <Compile Include="HiddenLayer.cs" />
+    <Compile Include="HiddenLayerDiscrete.cs" />
+    <Compile Include="ILinearRegression.cs" />
+    <Compile Include="IMultipleRegressionFitting.cs" />
+    <Compile Include="IRegressionFitting.cs" />
+    <Compile Include="IterativeReweightedLeastSquares.cs" />
+    <Compile Include="GLDistribution.cs" />
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogisticGradientDescent.cs" />
+    <Compile Include="LogisticRegression.cs" />
+    <Compile Include="LogisticRegressionDiscrete.cs" />
+    <Compile Include="LowerBoundNewtonRaphson.cs" />
+    <Compile Include="MLP.cs" />
+    <Compile Include="MultinomialLogisticLearning`1.cs" />
+    <Compile Include="LogisticRegression1.cs" />
+    <Compile Include="NeuralNetwork.cs" />
+    <Compile Include="NeuralNetworkEvolver.cs" />
+    <Compile Include="NeuralNetworkGenerator.cs" />
+    <Compile Include="NeuralNetworkProgram.cs" />
+    <Compile Include="NeuralNetworkQLearning.cs" />
+    <Compile Include="NeuralNetworkTrainer.cs" />
+    <Compile Include="NonlinearLeastSquares.cs" />
+    <Compile Include="NonlinearRegression.cs" />
+    <Compile Include="NonNegativeLeastSquares.cs" />
+    <Compile Include="CummulativeDensity.cs" />
+    <Compile Include="OperationsUtlity.cs" />
+    <Compile Include="PolynomialLeastSquares.cs" />
+    <Compile Include="PolynomialRegression.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RBM.cs" />
+    <Compile Include="SdA.cs" />
+    <Compile Include="Startup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Startup.designer.cs">
+      <DependentUpon>Startup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StopWordsHandler.cs" />
+    <Compile Include="Student_Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student_Home.designer.cs">
+      <DependentUpon>Student_Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student_Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student_Registration.designer.cs">
+      <DependentUpon>Student_Registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SVM.cs" />
+    <Compile Include="TFIDFMeasure.cs" />
+    <Compile Include="Tokeniser.cs" />
+    <Compile Include="Tools1.cs" />
+    <Compile Include="Tools.Misc.cs" />
+    <Compile Include="TrainItem.cs" />
+    <Compile Include="Utils.cs" />
+    <Compile Include="utils1.cs" />
+    <Compile Include="UtilsDrawing.cs" />
+    <EmbeddedResource Include="AboutBox.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccuracyGraph.resx">
+      <DependentUpon>AccuracyGraph.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Home.resx">
+      <DependentUpon>Admin_Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="aimlwriter.resx">
+      <DependentUpon>aimlwriter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BagWords.resx">
+      <DependentUpon>BagWords.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="botcheck.resx">
+      <DependentUpon>botcheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="botcheck1.resx">
+      <DependentUpon>botcheck1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BrowseFile.resx">
+      <DependentUpon>BrowseFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataPreprocessing.resx">
+      <DependentUpon>DataPreprocessing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeepLearning1.resx">
+      <DependentUpon>DeepLearning1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Emotion.resx">
+      <DependentUpon>Emotion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWords.resx">
+      <DependentUpon>frmWords.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Startup.resx">
+      <DependentUpon>Startup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_Home.resx">
+      <DependentUpon>Student_Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_Registration.resx">
+      <DependentUpon>Student_Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\examples.xls" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\media-handler.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_111700813_mediaitem111713480.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Coronavirus News_Large.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Insta Fake News.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fake-news-2048x779.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-graph-60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-data-protection-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-monitoring-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-close-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-processing-system-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-detector-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-detector-641.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-processing-64 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-graph-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-graph-601.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-data-analysis-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-data-protection-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-processing-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-close-641.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-close-642.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-detector-642.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-macos-close-60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-detector-643.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-data-analysis-1001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\88612968-12675100-d0aa-11ea-94ba-abd181c826e3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mini pro Bg1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\565-5656599_pink-rounded-rectangle-button-purple-border-svg-clip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\565-5656599_pink-rounded-rectangle-button-purple-border-svg-clip1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\565-5656599_pink-rounded-rectangle-button-purple-border-svg-clip2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\false-information-broadcasting-press-newspaper-journalists-editors-fake-news-junk-news-content-disinformation-media-concept_335657-1185.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-1151157687-612x612.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\talking-gif-animation-4.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Sed-08_2236076 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Sed-08_2236076 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\assistant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\as.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Robot-PNG-Image-HD copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\assistant1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\robot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\default.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oie_30144137iJGmGE90.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\default1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Happy.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Happy1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sad1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bored.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lovely.jpeg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
